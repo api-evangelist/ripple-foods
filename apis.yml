@@ -1,8 +1,23 @@
 aid: ripple-foods
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/ripple-foods.png
 name: Ripple Foods
-description: 'Ripple Foods is a company surfaced as a portfolio company of gv and added to the API Evangelist
-  network as a stub for enrichment. Sector: frontier-tech. This profile is a lead awaiting the enrichment
-  pipeline.'
+description: 'Ripple Foods is a plant-based beverage company that manufactures dairy-free milk alternatives
+  made from pea protein, along with protein shakes, kids'' milk, barista and coffee creamers, and organic
+  plant-based milk. It sells through retail grocery and a direct-to-consumer Shopify storefront. Surfaced
+  as a portfolio company of GV (Google Ventures) in the frontier-tech sector and added to the API Evangelist
+  network. As a consumer packaged goods company, Ripple Foods publishes no public developer program, API,
+  or technical documentation; this profile captures its public web and domain-security surface only.'
 url: https://raw.githubusercontent.com/api-evangelist/ripple-foods/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +27,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Frontier Tech
+- Food and Beverage
+- Consumer Packaged Goods
+- Plant-Based
+- Direct-to-Consumer
+- E-Commerce
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +43,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/ripple-foods-domain-security.yml
 - type: Website
-  url: http://ripplefoods.com
+  url: https://ripplefoods.com
+- type: Support
+  url: https://ripplefoods.com/pages/contact-us
+- type: Blog
+  url: https://ripplefoods.com/blogs/recipes
+- type: PrivacyPolicy
+  url: https://ripplefoods.com/policies/privacy-policy
+- type: TermsOfService
+  url: https://ripplefoods.com/policies/terms-of-service
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
